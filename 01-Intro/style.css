@@ -1,0 +1,60 @@
+/* 
+
+    CSS GRID
+
+Es un sistema bidimensional que nos permite crear layaouts a través de filas y columnas. 
+
+Facilita la creación de diseños complejos y responsivos.
+
+Conceptos Básicos: 
+
+    container -> Elemento padre al que se le habilita grid o la grilla 
+
+    items -> Elementos hijos que se encuentran dentro del padre y se verán afectados por la grilla.
+
+Para usar grid y sus propiedades debemos asignar al container el valor grid en su propiedad display. 
+
+    display: grid
+
+    COLUMNAS
+
+Para definir el número y tamaño de las columnas del grid usamos: 
+
+    grid-template-columns
+
+Definimos el tamaño de cada columna separados por un espacio. Podemos definir tantas columnas como necesitmos. 
+
+    grid-template-columns: 100px 200px 50px;
+
+    FILAS
+
+Para definir el número y tamaño de las filas del grid usamos: 
+
+    grid-template-rows 
+
+Definimos el tamaño de cada fila separadas por un espacio. Podemos definir tantas columnas como necesitemos. 
+
+    grid-template-rows: 100px 200px 100px 200px; 
+
+
+*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 100px 200px;
+  grid-template-rows: 100px 200px 100px 200px;
+  background-color: darkslategrey;
+  border: 2px solid darkslategray; 
+}
+
+.item {
+  color: white;
+  background-color: cadetblue;
+  border: 2px solid darkslategray; 
+}
