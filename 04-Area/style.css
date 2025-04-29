@@ -1,0 +1,48 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color:crimson;
+  color: aliceblue;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.container{
+  background-color:mintcream;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr 2fr 1fr;
+  grid-template-areas: 
+  'header header header'
+  'main main sidebar'
+  'footer footer footer'
+  ;
+  gap: 24px;
+  column-gap: 12px;
+  padding: 14px;
+  height: 100vh;
+ 
+}
+.item{
+  border-radius: 24px;
+  text-align: center;
+  background-color: rgb(122, 29, 29);
+}
+.header{
+  grid-area: header;
+  background-color:pink;
+}
+.main{
+  grid-area: main;
+  background-color: darksalmon;
+}
+.sidebar{grid-area: sidebar;
+  background-color:lightcoral;
+}
+.footer{
+  grid-area: footer;
+  background-color:indianred;
+}
